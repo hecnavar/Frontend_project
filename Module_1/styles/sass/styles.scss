@@ -1,0 +1,12 @@
+@import '_global';
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
