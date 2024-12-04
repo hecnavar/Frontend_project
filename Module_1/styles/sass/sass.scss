@@ -1,30 +1,16 @@
 @use "sass:color";
 @use 'variables';
-
-.header {
-  background-color: color.adjust(variables.$sass-main-color, $lightness: 10%);
-  padding: 20px 0;
-
-  h1 {
-    color: variables.$text-color;
-    font-size: 2rem;
-    text-align: center;
-
-    .highlight {
-      color: variables.$sass-main-color;
-    }
-  }
-}
+@use 'mixins';
 
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: variables.$spacing-unit;
 }
 
 // Ejemplos
 .example {
-  margin-top: 30px;
+  margin-top: variables.$spacing-unit;
 
   h2 {
     color: variables.$text-color;
@@ -33,18 +19,14 @@
   }
 
   .demo {
-    margin-top: 10px;
-    padding: 15px;
+    margin-top: variables.$spacing-unit;
+    padding: variables.$spacing-unit;
     background-color: #f9f9f9;
     border: 1px solid color.adjust(variables.$text-color, $lightness: 40%);
   }
 }
 
-// Mixins
-@mixin shadow($color, $size) {
-  box-shadow: 0 $size $size $color;
-}
-
+// Uso del mixin global
 .box {
   width: 200px;
   height: 100px;
@@ -53,7 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include shadow(rgba(0, 0, 0, 0.2), 10px);
+  @include mixins.shadow(rgba(0, 0, 0, 0.2), 10px);
 }
 
 // Anidación
@@ -62,6 +44,6 @@
 
   li {
     color: variables.$sass-main-color;
-    padding: 5px 0;
+    padding: variables.$spacing-unit 0;
   }
 }

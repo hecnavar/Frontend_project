@@ -1,0 +1,20 @@
+@use "sass:color";
+@use "variables";
+
+// Mixin para sombras
+@mixin shadow($color, $size) {
+  box-shadow: 0 $size $size $color;
+}
+
+// Mixin para centrar elementos
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin para sombra
+@mixin shadow($color, $size) {
+    box-shadow: 0 $size $size $color;
+  }
+  
