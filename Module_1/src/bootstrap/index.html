@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<body>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Frontend_project/">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/html/">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/css/">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/bootstrap/">Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/sass/">Sass</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container-fluid mt-5">
+        <h1>Ejemplos con bootstrap</h1>
+        <p>A continuación se muestran algunos ejemplos basicos de componentes que puedes usar con bootstrap</p>
+
+    <section>
+        <h2>Botones</h2>
+        <button class="btn btn-primary">Botón Primario</button>
+        <button class="btn btn-secondary">Botón Secundario</button>
+        <button class="btn btn-success">Botón Exitoso</button>
+        <button class="btn btn-danger">Botón de Peligro</button>
+    </section>
+
+    <section class="container-fluid mt-5">
+       <h2>Tarjetas (cards)</h2>
+        <div class="card" style="width: 18rem;">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+            <div class="card-body">
+                <h5 class="card-title">Título de la tarjeta</h5>
+                <p class="card-text">Este es un ejemplo de una tarjeta con Bootstrap</p> 
+                <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mt-5">
+        <h2>Barras de navegación</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </section>
+            <section class="mt-5">
+                <h2>Grillas (Grid System)</h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                      <div class="card-body">
+                        <h5 class="card-title">Columna 1</h5>
+                        <p class="card-text">Esta es la primera columna de la grilla. Puedes agregar contenido aquí.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                      <div class="card-body">
+                        <h5 class="card-title">Columna 2</h5>
+                        <p class="card-text">Esta es la segunda columna de la grilla. Puedes agregar más contenido aquí.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagen de ejemplo">
+                      <div class="card-body">
+                        <h5 class="card-title">Columna 3</h5>
+                        <p class="card-text">Esta es la tercera columna de la grilla. Puedes agregar aún más contenido aquí.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+          
+</main>
+
+</body>
+</html>
