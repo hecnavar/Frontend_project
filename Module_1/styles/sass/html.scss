@@ -1,11 +1,11 @@
-@import '_global';
+@use 'variables';
 
 body {
   font-family: 'Nunito', sans-serif;
 }
 
 header {
-  background-color: $primary-color;
+  background-color: variables.$primary-color;
   color: white;
   text-align: center;
   padding: 3rem 1rem;
