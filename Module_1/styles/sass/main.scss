@@ -4,8 +4,8 @@
 @use 'css';
 @use 'bootstrap';
 @use 'sass';
+@use "sass:color";
 
-// Estilos globales
 body {
     font-family: variables.$font-family-main;
     font-size: variables.$font-size-base;
