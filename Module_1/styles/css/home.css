@@ -115,6 +115,7 @@ body {
     font-weight: bold;
 }
 
+
 /* Responsividad para pantallas medianas (tabletas) */
 @media (max-width: 1024px) {
     .features {
