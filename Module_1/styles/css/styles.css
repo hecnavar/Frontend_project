@@ -12,7 +12,7 @@
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .nested-list {
@@ -20,13 +20,7 @@
 }
 .nested-list li {
   color: #3498db;
-  padding: 5px 0;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .example {
@@ -55,14 +49,6 @@
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.nested-list {
-  list-style: none;
-}
-.nested-list li {
-  color: #3498db;
-  padding: 1rem 0;
-}
-
 header {
   background-color: #0275d8;
   color: white;
@@ -70,43 +56,6 @@ header {
   padding: 3rem 1rem;
 }
 
-.card-example {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card-example:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-.example-box {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  background-color: #0275d8;
-  transition: transform 0.5s ease-in-out;
-}
-.example-box:hover {
-  transform: rotate(45deg) scale(1.2);
-}
-
-.pulse-animation {
-  width: 100px;
-  height: 100px;
-  background-color: #d11935;
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.6;
-  }
-}
 body {
   font-family: "Arial", sans-serif;
   font-size: 16px;
