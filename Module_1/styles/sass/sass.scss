@@ -2,12 +2,6 @@
 @use 'variables';
 @use 'mixins';
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: variables.$spacing-unit;
-}
-
 // Ejemplos
 .example {
   margin-top: variables.$spacing-unit;
@@ -38,12 +32,3 @@
   @include mixins.shadow(rgba(0, 0, 0, 0.2), 10px);
 }
 
-// Anidación
-.nested-list {
-  list-style: none;
-
-  li {
-    color: variables.$sass-main-color;
-    padding: variables.$spacing-unit 0;
-  }
-}

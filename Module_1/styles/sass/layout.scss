@@ -14,19 +14,19 @@
       }
     }
   }
-  
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.nested-list {
-  list-style: none;
-
-  li {
-    color: variables.$sass-main-color;
-    padding: 5px 0;
+  .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: variables.$spacing-unit;
   }
-}
+  
+  .nested-list {
+      list-style: none;
+  
+      li {
+          color: variables.$sass-main-color;
+          padding: variables.$spacing-unit 0;
+      }
+  }
+  
