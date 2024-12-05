@@ -3,8 +3,6 @@
 @use 'layout';
 @use 'sass';
 @use 'html';
-@use 'css';
-@use 'components';
 @use 'bootstrap';
 @use "sass:color";
 
@@ -29,3 +27,4 @@ footer {
   padding: variables.$spacing-unit;
   text-align: center;
 }
+
