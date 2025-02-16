@@ -9,6 +9,7 @@
     --img-size: 80px;
     --img-height: 80px;
     --margin-bottom: 15px;
+    --padding: 40px 20px;
 }
 
 body {
@@ -89,7 +90,7 @@ body {
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);
     gap: 20px;
-    padding: 40px 20px;
+    padding: var(--padding);
 }
 
 .feature {
