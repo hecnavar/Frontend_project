@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --columns: 5;
+    --img-size: 80px;
+    --margin-bottom: 15px;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -80,7 +86,7 @@ body {
 
 .features {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+    grid-template-columns: repeat(var(--columns), 1fr);
     gap: 20px;
     padding: 40px 20px;
 }
@@ -94,8 +100,8 @@ body {
 }
 
 .feature img {
-    width: 80px;
-    margin-bottom: 15px;
+    width: var(--img-size);
+    margin-bottom: var(--margin-bottom);
 }
 
 .feature h2 {
