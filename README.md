@@ -9,7 +9,7 @@ Este proyecto presenta un sitio web que implementa ejemplos interactivos de anim
 - Ejemplos prácticos de animaciones como **rotación, escalado y pulso**.
 - Uso de **Bootstrap** para un diseño responsivo.
 - Integración de **Sass** para modularidad y mantenimiento del código CSS.
-- Quiza sobre cosas basicas realizado con **Javascript** manipualando el DOM
+- Quiz sobre cosas basicas realizado con **Javascript** manipualando el DOM
 
 ---
 
