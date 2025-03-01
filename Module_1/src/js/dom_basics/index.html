@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción al DOM</title>
     <link rel="stylesheet" href="../../../../Module_1/styles/css/home.css">
+    <link rel="stylesheet" href="../../../../Module_1/styles/css/dom_basics.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
 </head>
 <body>
@@ -26,19 +27,63 @@
         </div>
         </nav>
     <main>
-        <h1>Introducción al DOM</h1>
-        <p>Descripción pendiente</p>
+        <div class="interactive_example">
+            <h1>Introducción al DOM</h1>
+            <p>El siguiente Ejemplo le pide nombre y edad al usuario y mediate el uso de DOM, no regresa un texto en la pagina con los datos introducidos</p>
+            <p>Del lado derecho se puede encontrar el código con comentarios de lo que se esta haciendo</p>
+            <h2>Ejemplo Interactivo con DOM</h2>
+            <p>Introduce un nombre y una edad para crear una persona:</p>
+            <input type="text" id="name" placeholder="Name">
+            <input type="number" id="age" placeholder="Age">
+            <button id="createPerson">Crear persona</button>
+            
+            <div id="result" class="result"></div>
+        </div>
+        <div class="code_js">
+            <pre><code>
+        class Person {
+            constructor(name, age) {
+                this.name = name; // Almacena el nombre de la persona
+                this.age = age;   // Almacena la edad de la persona
+            }
         
-        <h2>Ejemplo Interactivo con DOM</h2>
-        <p>Introduce un nombre y una edad para crear una persona:</p>
-        <input type="text" id="nombre" placeholder="Nombre">
-        <input type="number" id="edad" placeholder="Edad">
-        <button id="crearPersona">Crear Persona</button>
-        <div id="resultado" class="code-box"></div>
+            // Método que devuelve un mensaje de saludo
+            greet() {
+                return `Hola, soy ${this.name} y tengo ${this.age} años.`;
+            }
+        }
         
-        <script src="../../../js/introduction_dom.js"></script>
+        // Agregamos un evento "click" al botón con id "createPerson"
+        document.getElementById("createPerson").addEventListener("click", function() {
+            // Obtener los valores ingresados y eliminar espacios en blanco
+            const name = document.getElementById("name").value.trim();
+            const age = document.getElementById("age").value.trim();
+            
+            // Referencia al div donde se mostrará el resultado
+            const resultDiv = document.getElementById("result");
         
-        <a href="index.html">Volver al inicio</a>
+            // Validar que los campos no estén vacíos y que la edad sea un número válido
+            if (name === "" || age === "" || isNaN(age) || age <= 0) {
+                resultDiv.innerText = " Por favor, ingresa un nombre y una edad válida.";
+                resultDiv.classList.add("error"); // Cambia el color del texto a rojo en caso de error
+                return; // Detiene la ejecución si los datos no son válidos
+            }
+        
+            // Crear un nuevo objeto de la clase "Person"
+            const person = new Person(name, age);
+        
+            // Mostrar el saludo en el div de resultado
+            resultDiv.innerText = person.greet();
+            resultDiv.classList.remove("error"); // Restablecer el color del texto a negro
+        });
+            </code></pre>
+        </div>
+        
     </main>
+    <footer class="return_link">
+        <a href="/Frontend_project/Module_1/src/js/">Volver al menu anterior</a>
+        <p>&copy; 2025 Dev Web. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../../../js/introduction_dom.js"></script>
 </body>
 </html>
