@@ -17,8 +17,8 @@ Este proyecto presenta un sitio web que implementa ejemplos interactivos de anim
 - **CSS3**
 - **Bootstrap** 5.3
 - **Sass**: Preprocesador CSS.
-
----
+- **Sass**: Preprocesador CSS.
+- **Javascript**
 
 ## 📁 Estructura del Proyecto
 

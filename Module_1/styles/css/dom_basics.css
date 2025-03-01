@@ -1,0 +1,40 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.interactive_example, .code_js {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.return_link {
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.return_link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.return_link a:hover {
+    color: #4aa6d4;
+    text-decoration: underline;
+}

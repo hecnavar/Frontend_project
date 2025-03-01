@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --columns: 5;
+    --img-size: 80px;
+    --img-height: 80px;
+    --margin-bottom: 15px;
+    --padding: 40px 20px;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -80,9 +88,9 @@ body {
 
 .features {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
+    grid-template-columns: repeat(var(--columns), 1fr);
     gap: 20px;
-    padding: 40px 20px;
+    padding: var(--padding);
 }
 
 .feature {
@@ -93,9 +101,14 @@ body {
     padding: 20px;
 }
 
-.feature img {
-    width: 80px;
-    margin-bottom: 15px;
+.feature img { 
+    width: var(--img-size);
+    height: var(--img-height);
+    object-fit: contain;
+    margin-bottom: var(--margin-bottom);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .feature h2 {
