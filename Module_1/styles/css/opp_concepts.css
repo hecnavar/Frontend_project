@@ -32,4 +32,15 @@
     border-radius: 5px;
 }
 
+.return_link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
 
+.return_link a:hover {
+    color: #4aa6d4;
+    text-decoration: underline;
+}

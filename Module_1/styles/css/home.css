@@ -129,26 +129,6 @@ body {
 }
 
 
-.return_link {
-    background-color: #222;
-    color: white;
-    text-align: center;
-}
-
-.return_link a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.return_link a:hover {
-    color: #4aa6d4;
-    text-decoration: underline;
-}
-
-
 /* Responsividad para pantallas medianas (tabletas) */
 @media (max-width: 1024px) {
     .features {
