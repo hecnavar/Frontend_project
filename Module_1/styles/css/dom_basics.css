@@ -1,12 +1,12 @@
 main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    gap: 10px; /* Espacio entre las tarjetas */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     margin-top: 5px;
 }
 
 .interactive_example, .code_js {
-    background-color: #f4f4f4; /* Fondo de las tarjetas */
+    background-color: #f4f4f4;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

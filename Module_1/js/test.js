@@ -1,8 +1,8 @@
 const questions = [
     {
-        question: "¿Cuál es la palabra clave para declarar una variable en JavaScript?",
+        question: "¿Cuál es la palabra clave para declarar una constante en JavaScript?",
         options: ["var", "let", "const", "Todas las anteriores"],
-        answer: "Todas las anteriores"
+        answer: "const"
     },
     {
         question: "¿Cómo se selecciona un elemento con id 'titulo' en JavaScript?",
@@ -13,6 +13,16 @@ const questions = [
         question: "¿Qué método se usa para convertir un string en un número?",
         options: ["parseInt()", "parseFloat()", "Number()", "Todas las anteriores"],
         answer: "Todas las anteriores"
+    },
+    {
+        question: "¿Cuál es el valor de `x` después de ejecutar el siguiente código: `let x = 10; x++;`?",
+        options: ["10", "11", "12", "NaN"],
+        answer: "11"
+    },
+    {
+        question: "¿Cuál de las siguientes funciones se usa para agregar un elemento al final de un array?",
+        options: ["push()", "pop()", "shift()", "unshift()"],
+        answer: "push()"
     }
 ];
 

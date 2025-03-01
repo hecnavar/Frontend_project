@@ -1,32 +1,18 @@
-h1 {
-    color: #333;
-}
-
-
-#quiz-container {
-    text-align: left;
-    margin-bottom: 20px;
-    padding: auto;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
+#test {
+    font-size: 18px;
+    color: #fff;
+    background-color: #4CAF50;
     padding: 10px 20px;
-    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
-
-button:hover {
-    background-color: #0056b3;
-}
-
 
 .return_link {
     background-color: #222;
     color: white;
     text-align: center;
-    margin-top: 20px;
 }
 
 .return_link a {
