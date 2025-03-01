@@ -1,3 +1,4 @@
+// Question and Answer
 const questions = [
     {
         question: "¿Cuál es la palabra clave para declarar una constante en JavaScript?",
