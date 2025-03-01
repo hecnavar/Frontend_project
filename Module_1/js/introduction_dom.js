@@ -1,23 +1,25 @@
-class Persona {
-    constructor(nombre, edad) {
-        this.nombre = nombre;
-        this.edad = edad;
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
     }
-    saludar() {
-        return `Hola, soy ${this.nombre} y tengo ${this.edad} años.`;
+    greet() {
+        return `Hola, mi nombre es ${this.name} y mi edad es ${this.age} años.`;
     }
 }
 
-document.getElementById("crearPersona").addEventListener("click", function() {
-    const nombre = document.getElementById("nombre").value;
-    const edad = document.getElementById("edad").value;
-    
-    if (nombre === "" || edad === "") {
-        alert("Por favor, ingresa un nombre y una edad válida.");
+document.getElementById("createPerson").addEventListener("click", function() {
+    const name = document.getElementById("name").value.trim();
+    const age = document.getElementById("age").value.trim();
+    const resultDiv = document.getElementById("result");
+
+    if (name === "" || age === "" || isNaN(age) || age <= 0) {
+        resultDiv.innerText = "Please enter a valid name and age.";
+        resultDiv.style.color = "red";
         return;
     }
-    
-    const persona = new Persona(nombre, edad);
-    document.getElementById("resultado").innerText = persona.saludar();
-    alert(persona.saludar());
+
+    const person = new Person(name, age);
+    resultDiv.innerText = person.greet();
+    resultDiv.style.color = "black";
 });
