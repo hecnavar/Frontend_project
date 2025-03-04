@@ -1,0 +1,20 @@
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+#main_information{
+    background-color: #e0e7ff; /* Un azul claro elegante */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
