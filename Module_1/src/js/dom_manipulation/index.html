@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+    <link rel="stylesheet" href="../../../styles/css/home.css">
+    <link rel="stylesheet" href="../../../styles/css/dom_manipulation.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/Frontend_project/">Dev Web</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/html/" target="_blank">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/css/" target="_blank">CSS</a></li>
+              <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/bootstrap/" target="_blank">Bootstrap</a></li>
+              <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/sass/" target="_blank">Sass</a></li>
+              <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/js/" target="_blank">JavaScript</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main>
+        <h2>¿Qué es el DOM?</h2>
+        <p>
+            El DOM es una representación en forma de árbol de todos los elementos HTML de una página web. Cada elemento, atributo y texto de la página se convierte en un objeto que puede ser accesible y manipulable a través de JavaScript.
+        </p>
+    
+        <h2>¿Cómo se manipula el DOM?</h2>
+        <p>
+            Para manipular el DOM con JavaScript, utilizamos métodos y propiedades que nos permiten modificar elementos, agregar nuevos, eliminar existentes o cambiar su contenido. Algunos de los métodos más comunes son:
+        </p>
+        <ul>
+            <li><strong>document.getElementById(id)</strong>: Permite acceder a un elemento de la página a través de su ID.</li>
+            <li><strong>document.getElementsByClassName(class)</strong>: Obtiene una lista de elementos con una clase específica.</li>
+            <li><strong>document.createElement(tag)</strong>: Crea un nuevo elemento HTML.</li>
+            <li><strong>element.appendChild(node)</strong>: Añade un nuevo nodo hijo a un elemento.</li>
+            <li><strong>element.innerHTML</strong>: Permite modificar el contenido HTML de un elemento.</li>
+        </ul>
+    
+        <h2>Ejemplo de Manipulación del DOM</h2>
+        <p>
+            A continuación, se muestra un ejemplo simple de cómo agregar un nuevo párrafo a la página mediante JavaScript:
+        </p>
+        <pre><code>
+            // Crear un nuevo elemento de párrafo
+            let nuevoParrafo = document.createElement("p");
+    
+            // Establecer el texto del párrafo
+            nuevoParrafo.innerHTML = "Este es un párrafo agregado dinámicamente.";
+    
+            // Agregar el párrafo al cuerpo del documento
+            document.body.appendChild(nuevoParrafo);
+        </code></pre>
+        <p>
+            En este ejemplo, el código crea un nuevo elemento de tipo <code>&lt;p&gt;</code>, establece su contenido de texto con <code>innerHTML</code> y luego lo agrega al cuerpo del documento con <code>appendChild</code>.
+        </p>
+    
+        <h2>Conclusión</h2>
+        <p>
+            La manipulación del DOM es esencial para crear aplicaciones web interactivas y dinámicas. A través de ella, podemos modificar el contenido, estructura y estilo de la página sin necesidad de recargarla, lo que mejora la experiencia del usuario.
+        </p>
+
+        
+
+        <a id="test" href="./../test_js/index.html">Veamos un ejemplo de lo que se puede hacer</a>
+    </main>
+    <footer class="return_link">
+        <a href="/Frontend_project/Module_1/src/js/">Volver al menu anterior</a>
+        <p>&copy; 2025 Dev Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

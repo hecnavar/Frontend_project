@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Sass</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/Frontend_project/">Dev Web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/Frontend_project/" >HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/html/" target="_blank" >HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/css/" target="_blank">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/bootstrap/" target="_blank">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/sass/" target="_blank">Sass</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Frontend_project/Module_1/src/js/" target="_blank">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+      <h1>¿Qué es <span class="highlight">Sass</span>?</h1>
+      <p class="mt-5">Sass es un preprocesador que extiende las capacidades de CSS, permitiéndote escribir código más limpio, organizado y reutilizable.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="example">
+      <h2>1. Variables</h2>
+      <p>Las variables te permiten definir valores reutilizables, como colores o tamaños.</p>
+      <div class="demo" style="background-color: #3498db; color: white; padding: 10px;">
+        Fondo azul (definido como una variable en Sass)
+      </div>
+      <pre><code>
+$primary-color: #3498db;
+body {
+  background-color: $primary-color;
+}
+      </code></pre>
+    </section>
+
+    <section class="example">
+      <h2>2. Mixins</h2>
+      <p>Los mixins son bloques de código que puedes reutilizar con diferentes parámetros.</p>
+      <div class="demo">
+        <div class="box">Box con sombreado</div>
+      </div>
+      <pre><code>
+@mixin shadow($color, $size) {
+  box-shadow: 0 $size $size $color;
+}
+
+.box {
+  @include shadow(rgba(0, 0, 0, 0.2), 10px);
+}
+      </code></pre>
+    </section>
+
+    <section class="example">
+      <h2>3. Anidación</h2>
+      <p>La anidación facilita la escritura de estilos jerárquicos, como elementos dentro de un `div`.</p>
+      <div class="demo">
+        <ul class="nested-list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+      <pre><code>
+.nested-list {
+  list-style: none;
+
+  li {
+    color: $primary-color;
+    padding: 5px 0;
+  }
+}
+      </code></pre>
+    </section>
+
+    <section class="example">
+      <h2>4. Funciones</h2>
+      <p>Sass incluye funciones como `darken` y `lighten` para manipular colores.</p>
+      <div class="demo">
+        <p style="color: #2c3e50;">Texto original</p>
+        <p style="color: darken(#2c3e50, 10%);">Texto oscuro</p>
+      </div>
+      <pre><code>
+$base-color: #2c3e50;
+
+.text-original {
+  color: $base-color;
+}
+
+.text-darker {
+  color: darken($base-color, 10%);
+}
+      </code></pre>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Aprender Sass es un paso hacia CSS más organizado. 🌟</p>
+  </footer>
+</body>
+</html>

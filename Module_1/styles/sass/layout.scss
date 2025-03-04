@@ -1,0 +1,32 @@
+@use 'variables';
+@use 'mixins';
+@use "sass:color";
+
+.header {
+    background-color: color.adjust(variables.$primary-color, $lightness: 10%);
+    padding: 20px 0;
+  
+    h1 {
+      color: variables.$text-color;
+  
+      .highlight {
+        color: variables.$secondary-color;
+      }
+    }
+  }
+
+  .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: variables.$spacing-unit;
+  }
+  
+  .nested-list {
+      list-style: none;
+  
+      li {
+          color: variables.$sass-main-color;
+          padding: variables.$spacing-unit 0;
+      }
+  }
+  

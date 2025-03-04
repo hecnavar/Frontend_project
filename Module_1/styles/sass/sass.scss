@@ -1,0 +1,34 @@
+@use "sass:color";
+@use 'variables';
+@use 'mixins';
+
+// Ejemplos
+.example {
+  margin-top: variables.$spacing-unit;
+
+  h2 {
+    color: variables.$text-color;
+    border-bottom: 2px solid variables.$sass-main-color;
+    padding-bottom: 5px;
+  }
+
+  .demo {
+    margin-top: variables.$spacing-unit;
+    padding: variables.$spacing-unit;
+    background-color: #f9f9f9;
+    border: 1px solid color.adjust(variables.$text-color, $lightness: 40%);
+  }
+}
+
+// Uso del mixin global
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: variables.$sass-main-color;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mixins.shadow(rgba(0, 0, 0, 0.2), 10px);
+}
+

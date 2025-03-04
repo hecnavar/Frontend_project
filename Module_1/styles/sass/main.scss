@@ -1,26 +1,30 @@
 @use 'variables';
 @use 'mixins';
-@use 'html';
-@use 'css';
-@use 'bootstrap';
+@use 'layout';
 @use 'sass';
+@use 'html';
+@use 'bootstrap';
+@use "sass:color";
 
 // Estilos globales
 body {
-    font-family: variables.$font-family-main;
-    font-size: variables.$font-size-base;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+  font-family: variables.$font-family-main;
+  font-size: variables.$font-size-base;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
 }
 
+// Estilos para el navbar
 .navbar {
-    background-color: variables.$primary-color;
+  background-color: variables.$primary-color;
 }
 
+// Estilos para el footer
 footer {
-    background-color: #333;
-    color: white;
-    padding: variables.$spacing-unit;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: variables.$spacing-unit;
+  text-align: center;
 }
+

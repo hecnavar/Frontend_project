@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --columns: 5;
+    --img-size: 80px;
+    --img-height: 80px;
+    --margin-bottom: 15px;
+    --padding: 40px 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fffaf5;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.actions a {
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.sign-in {
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.start-trial {
+    background-color: #1cbf60;
+    color: white;
+    border: none;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #22313f;
+}
+
+.intro p {
+    margin: 20px 0;
+    color: #777;
+}
+
+.intro a {
+    color: #1cbf60;
+    text-decoration: none;
+}
+
+.explore-button {
+    background-color: #1cbf60;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 20px;
+    padding: var(--padding);
+}
+
+.feature {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.feature img { 
+    width: var(--img-size);
+    height: var(--img-height);
+    object-fit: contain;
+    margin-bottom: var(--margin-bottom);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.feature a {
+    text-decoration: none;
+    color: #1cbf60;
+    font-weight: bold;
+}
+
+
+/* Responsividad para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-button {
+        width: 100px;
+    }
+}

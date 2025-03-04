@@ -1,5 +1,52 @@
-body {
-  font-family: "Nunito", sans-serif;
+.header {
+  background-color: rgb(16.2110091743, 143.3440366972, 252.7889908257);
+  padding: 20px 0;
+}
+.header h1 {
+  color: #2c3e50;
+}
+.header h1 .highlight {
+  color: #5bc0de;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nested-list {
+  list-style: none;
+}
+.nested-list li {
+  color: #3498db;
+  padding: 1rem 0;
+}
+
+.example {
+  margin-top: 1rem;
+}
+.example h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+.example .demo {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid rgb(137.5806451613, 164, 190.4193548387);
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -9,43 +56,6 @@ header {
   padding: 3rem 1rem;
 }
 
-.card-example {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card-example:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-.example-box {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  background-color: #0275d8;
-  transition: transform 0.5s ease-in-out;
-}
-.example-box:hover {
-  transform: rotate(45deg) scale(1.2);
-}
-
-.pulse-animation {
-  width: 100px;
-  height: 100px;
-  background-color: #d11935;
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.6;
-  }
-}
 body {
   font-family: "Arial", sans-serif;
   font-size: 16px;
